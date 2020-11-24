@@ -3,7 +3,7 @@ Sample demo project in integrate Katalon Studio with Apache Hive
 
 ## Prerequisites
 - Install Hadoop and Apache Hive successfully.
-<p> Note: It's not easy to setup Hadoop and Apache Hive completely. Please carefully check localhost:9870 and localhost:10002 are up before running.</p>
+<p> Note: It's not easy to setup Hadoop and Apache Hive completely. Please check carefully Hadoop and Hive services are up such as: localhost:9870 and localhost:10002 before using with Katalon.</p>
 - Install Gradle
 
 ## How to use

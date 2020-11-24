@@ -28,6 +28,7 @@ DBKeywords.executeStatement('DELETE FROM t1')
 'Insert new rows'
 DBKeywords.executeStatement("INSERT INTO t1 VALUES (1, 'one'), (2, 'two'), (3, 'three')")
 
+'Query all rows'
 ResultSet rs = DBKeywords.executeQueryAndGetResult("SELECT * FROM t1")
 List table = DBKeywords.convertResultSetToTable(rs)
 println table
@@ -35,7 +36,7 @@ println table
 'Verify the return result should have two columns'
 assert table.size() == 2
 
-'Verify data of the query result'
+'Verify data of the query result match with the inserted data'
 List firstColumn = table.get(0)
 assert firstColumn == [1, 2, 3]
 

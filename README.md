@@ -1,2 +1,21 @@
 # apache-hive-tests
 Sample demo project in integrate Katalon Studio with Apache Hive
+
+## Prerequisites
+- Install Hadoop and Apache Hive successfully
+Note: It's not easy to setup Hadoop and Apache Hive completly. Please carefully check localhost:9870, localhost:10002 are up before running.
+- Install Gradle
+
+## How to use
+- Clone the project
+- Before opening project, open terminate under the project location and type `gradle katalonCopyDendencies`
+- Open the project in Katalon Studio
+- Modify the `default` profile by changing default variable values as your database settings
+```
+GlovalVariable.g_host = <HiveServer2 url> //default is localhost
+GlovalVariable.g_port = <HiveServer2 port> //default is 10000
+GlovalVariable.g_database = <Database name> //default is 'default'
+GlovalVariable.g_username = <Hadoop username or logged username> //default is '' as logged username
+GlovalVariable.g_password = <password of the username> //default is ''
+```
+- Open the `All Tests` test suites and run the sample suite

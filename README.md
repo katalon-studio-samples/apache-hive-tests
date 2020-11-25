@@ -9,7 +9,7 @@ Sample demo project in integrate Katalon Studio with Apache Hive
 
 ## How to use
 - Clone the project
-- Before opening project, open terminate under the project location and type `gradle katalonCopyDendencies`
+- Before opening project, open the terminal/command promt under the project location and type `gradle katalonCopyDendencies`
 - Open the project in Katalon Studio
 - Modify the `default` profile by changing default variable values as your database settings
 ```
